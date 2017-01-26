@@ -1,6 +1,8 @@
 package com.example.controller;
 
-
+/**
+ * @author sharmila
+ */
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -48,6 +50,7 @@ public class DefaultController {
 		return author;
 	}
 	
+	
 	public Book insert(int bookId, Author author){
 		
 		Book book=new Book();
@@ -56,6 +59,8 @@ public class DefaultController {
 		book.setBookName("journal dev " + bookId);
 		return book;
 	}
+	
+	//delete a row from tbl_book by passing id
 	@RequestMapping(value="/{id}/delete",method=RequestMethod.POST)
 	public void delete(Integer id){
 		bookService.delete(1);
@@ -66,13 +71,13 @@ public class DefaultController {
 		return "index";
 	}
 	
-	
+	//get all data from tbl_book
 	@RequestMapping(method=RequestMethod.GET)
 	@SuppressWarnings("unchecked")
 	public ModelAndView getAll(Model model){
 		System.out.println("get all method called");
 	
-		
+		//Iterating througth all data from tbl_book 
 		Iterable<Book> result=bookService.getAll();
 	
 		System.out.println(result);

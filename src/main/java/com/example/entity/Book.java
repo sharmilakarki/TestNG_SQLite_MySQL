@@ -1,5 +1,7 @@
 package com.example.entity;
-
+/**
+ * @author sharmila
+ */
 import java.io.Serializable;
 
 import javax.persistence.CascadeType;

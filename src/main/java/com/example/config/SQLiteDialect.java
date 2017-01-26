@@ -1,6 +1,8 @@
 package com.example.config;
 
-
+/**
+ * @author sharmila
+ */
 import java.sql.Types;
 
 import org.hibernate.dialect.Dialect;
@@ -9,7 +11,7 @@ import org.hibernate.dialect.function.StandardSQLFunction;
 import org.hibernate.dialect.function.VarArgsSQLFunction;
 import org.hibernate.type.StringType;
 
-
+//Using dialect configuration for SQLite
 
 public class SQLiteDialect extends Dialect {
     public SQLiteDialect() {

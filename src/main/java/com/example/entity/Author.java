@@ -1,5 +1,7 @@
 package com.example.entity;
-
+/**
+ * @author sanjay
+ */
 import java.io.Serializable;
 import java.util.Set;
 
@@ -11,6 +13,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+//tbl_author is the table name of the Author Entity
 @Entity
 @Table(name="tbl_author")
 public class Author implements Serializable{

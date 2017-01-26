@@ -1,6 +1,8 @@
 package com.example.api.impl;
 
-
+/**
+ * @author sharmila
+ */
 import org.springframework.stereotype.Service;
 
 import com.example.api.BookDao;
@@ -8,7 +10,7 @@ import com.example.api.BookDao;
 
 @Service
 public class BookDaoImpl implements BookDao {
-
+// overridding all the methods from BookDao
 	@Override
 	public String test(String value) {
 		

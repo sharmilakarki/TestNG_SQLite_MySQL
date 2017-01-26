@@ -1,5 +1,7 @@
 package com.example;
-
+/**
+ * @author sharmila
+ */
 
 import javax.transaction.Transactional;
 
@@ -20,9 +22,13 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+
+/*Test annotation which indicates that the ApplicationContext 
+associated with a test is dirty and should therefore be closed and removed from the context cache.
+*/
+
 @DirtiesContext
 
-@Transactional
 @SuppressWarnings("deprecation")
 public class TestNgProjectApplicationTests extends AbstractTestNGSpringContextTests{
 

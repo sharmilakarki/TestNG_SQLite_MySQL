@@ -1,5 +1,7 @@
 package com.example.crudtest;
-
+/**
+ * @author sharmila
+ */
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +17,14 @@ import com.example.api.service.BookService;
 import com.example.entity.Book;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+
+/*Test annotation which indicates that the ApplicationContext 
+associated with a test is dirty and should therefore be closed and removed from the context cache.
+*/
 @DirtiesContext
 @Transactional
+
+//use application-mysql.properties in order to use mysql for the database
 @TestPropertySource(locations="classpath:application-mysql.properties")
 public class CRUDTest  extends AbstractTestNGSpringContextTests{
 	
@@ -38,7 +46,7 @@ public class CRUDTest  extends AbstractTestNGSpringContextTests{
 		Book bookTest=this.bookService.findByBookId(bookId);
 		
 		
-		
+		//check whether the expected value of id 2 of book is equal to the value passed
 		Assert.assertEquals(bookTest.getBookName(), book.getBookName());
 	}
 }
