@@ -13,8 +13,8 @@ import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.example.api.service.BookService;
 import com.example.entity.Book;
+import com.example.service.BookService;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 

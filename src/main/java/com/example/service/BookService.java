@@ -1,4 +1,4 @@
-package com.example.api.service;
+package com.example.service;
 /**
  * @author sharmila
  */
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.api.BookRepositoryCustom;
 import com.example.entity.Book;
-
+//Service layer for Book
 @Service
 public class BookService {
 

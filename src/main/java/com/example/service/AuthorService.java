@@ -1,4 +1,4 @@
-package com.example.api.service;
+package com.example.service;
 /**
  * @author sanjay
  */

@@ -1,4 +1,4 @@
-package com.example.api.impl;
+package com.example.service;
 
 /**
  * @author sharmila
@@ -9,7 +9,7 @@ import com.example.api.BookDao;
 
 
 @Service
-public class BookDaoImpl implements BookDao {
+public class BookDaoService implements BookDao {
 // overridding all the methods from BookDao
 	@Override
 	public String test(String value) {

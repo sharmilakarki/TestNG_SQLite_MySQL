@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.example.api.service.AuthorService;
-import com.example.api.service.BookService;
 import com.example.entity.Author;
 import com.example.entity.Book;
+import com.example.service.AuthorService;
+import com.example.service.BookService;
 
 
 @Controller
