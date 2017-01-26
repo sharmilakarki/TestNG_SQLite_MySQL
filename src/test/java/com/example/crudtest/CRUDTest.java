@@ -31,7 +31,7 @@ public class CRUDTest  extends AbstractTestNGSpringContextTests{
 	@Autowired
 	BookService bookService;
 	
-	
+	private static int bookId;
 
 	@Test
 	public void insertOperation(){
@@ -42,11 +42,19 @@ public class CRUDTest  extends AbstractTestNGSpringContextTests{
 		
 		System.out.println(book.getId());
 		
-		int bookId=2;
+		bookId=2;
 		Book bookTest=this.bookService.findByBookId(bookId);
 		
 		
 		//check whether the expected value of id 2 of book is equal to the value passed
 		Assert.assertEquals(bookTest.getBookName(), book.getBookName());
 	}
+	
+	@Test(dependsOnMethods={"insertOperation"})
+	public void delete(){
+		Book bookTest=this.bookService.findByBookId(bookId);
+	}
+	
+	
+	
 }
