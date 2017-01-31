@@ -1,7 +1,7 @@
 #driver class name for sqlite
 spring.datasource.driverClassName=org.sqlite.JDBC
 #database location in the drive
-spring.datasource.url=jdbc:sqlite:/home/shoryukane/Desktop/Database/database.db
+spring.datasource.url=jdbc:sqlite:/home/sharmila/database.db
 spring.datasource.username=
 spring.datasource.password=
 

@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,56 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content passed suite-Default_suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.example.crudtest.CRUDTest" hash-for-method="insertOperation">insertOperation</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.example.crudtest.CRUDSqliteTest" hash-for-method="deleteAuthorTest">deleteAuthorTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.example.crudtest.CRUDSqliteTest" hash-for-method="deleteBookTest">deleteBookTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.example.crudtest.CRUDSqliteTest" hash-for-method="findOneAuthor">findOneAuthor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.example.crudtest.CRUDSqliteTest" hash-for-method="findOneBook">findOneBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.example.crudtest.CRUDSqliteTest" hash-for-method="insertAuthorTest">insertAuthorTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.example.crudtest.CRUDSqliteTest" hash-for-method="insertBookTest">insertBookTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.example.crudtest.CRUDSqliteTest" hash-for-method="updateAuthorTest">updateAuthorTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.example.crudtest.CRUDSqliteTest" hash-for-method="updateBookTest">updateBookTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,27 +151,74 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.example.crudtest.CRUDTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.example.crudtest.CRUDSqliteTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="insertOperation">
-                  </a> <!-- insertOperation -->
-                  <span class="method-name">insertOperation</span>
-                  <div class="stack-trace"><b>"expected:<spring tutorials> but was:<journal dev 2>"</b><br>org.testng.Assert.fail(Assert.java:89)<br>org.testng.Assert.failNotEquals(Assert.java:489)<br>org.testng.Assert.assertEquals(Assert.java:118)<br>org.testng.Assert.assertEquals(Assert.java:171)<br>org.testng.Assert.assertEquals(Assert.java:181)<br>com.example.crudtest.CRUDTest.insertOperation(CRUDTest.java:42)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:182)<br>org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:175)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:194)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:695)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:768)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1113)<br>org.testng.TestNG.run(TestNG.java:1025)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
-</div> <!-- stack-trace -->
+                  <a name="deleteAuthorTest">
+                  </a> <!-- deleteAuthorTest -->
+                  <span class="method-name">deleteAuthorTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteBookTest">
+                  </a> <!-- deleteBookTest -->
+                  <span class="method-name">deleteBookTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findOneAuthor">
+                  </a> <!-- findOneAuthor -->
+                  <span class="method-name">findOneAuthor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findOneBook">
+                  </a> <!-- findOneBook -->
+                  <span class="method-name">findOneBook</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertAuthorTest">
+                  </a> <!-- insertAuthorTest -->
+                  <span class="method-name">insertAuthorTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertBookTest">
+                  </a> <!-- insertBookTest -->
+                  <span class="method-name">insertBookTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateAuthorTest">
+                  </a> <!-- updateAuthorTest -->
+                  <span class="method-name">updateAuthorTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateBookTest">
+                  </a> <!-- updateBookTest -->
+                  <span class="method-name">updateBookTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse-1796472900/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse-42593335/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,22 +227,7 @@
 &lt;suite name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot; preserve-order=&quot;true&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.example.entity.Author&quot;/&gt;
-      &lt;class name=&quot;com.example.TestNgProjectApplication&quot;/&gt;
-      &lt;class name=&quot;com.example.api.BookRepositoryCustom&quot;/&gt;
-      &lt;class name=&quot;com.example.controller.DefaultController&quot;/&gt;
-      &lt;class name=&quot;com.example.entity.Book&quot;/&gt;
-      &lt;class name=&quot;com.example.api.AuthorRepositoryCustom&quot;/&gt;
-      &lt;class name=&quot;com.example.config.SQLiteDialect&quot;/&gt;
-      &lt;class name=&quot;com.example.controller.TestingController&quot;/&gt;
-      &lt;class name=&quot;com.example.ApplicationConfigurerAdapter&quot;/&gt;
-      &lt;class name=&quot;com.example.api.BookDao&quot;/&gt;
-      &lt;class name=&quot;com.example.api.impl.BookDaoImpl&quot;/&gt;
-      &lt;class name=&quot;com.example.controller.DefaultRestController&quot;/&gt;
-      &lt;class name=&quot;com.example.TestNgProjectApplicationTests&quot;/&gt;
-      &lt;class name=&quot;com.example.crudtest.CRUDTest&quot;/&gt;
-      &lt;class name=&quot;com.example.api.service.AuthorService&quot;/&gt;
-      &lt;class name=&quot;com.example.api.service.BookService&quot;/&gt;
+      &lt;class name=&quot;com.example.crudtest.CRUDSqliteTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -174,7 +241,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (16 classes)</span>
+                <span class="test-name">Default test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -200,16 +267,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'insertOperation')
-data.setCell(0, 2, 'com.example.crudtest.CRUDTest')
-data.setCell(0, 3, 506);
+data.setCell(0, 1, 'insertAuthorTest')
+data.setCell(0, 2, 'com.example.crudtest.CRUDSqliteTest')
+data.setCell(0, 3, 212);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'insertBookTest')
+data.setCell(1, 2, 'com.example.crudtest.CRUDSqliteTest')
+data.setCell(1, 3, 127);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'updateAuthorTest')
+data.setCell(2, 2, 'com.example.crudtest.CRUDSqliteTest')
+data.setCell(2, 3, 114);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'updateBookTest')
+data.setCell(3, 2, 'com.example.crudtest.CRUDSqliteTest')
+data.setCell(3, 3, 106);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'deleteBookTest')
+data.setCell(4, 2, 'com.example.crudtest.CRUDSqliteTest')
+data.setCell(4, 3, 88);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'deleteAuthorTest')
+data.setCell(5, 2, 'com.example.crudtest.CRUDSqliteTest')
+data.setCell(5, 3, 84);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'findOneAuthor')
+data.setCell(6, 2, 'com.example.crudtest.CRUDSqliteTest')
+data.setCell(6, 3, 73);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'findOneBook')
+data.setCell(7, 2, 'com.example.crudtest.CRUDSqliteTest')
+data.setCell(7, 3, 10);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 506 ms</span>
+              <span class="suite-total-time">Total running time: 814 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -235,32 +330,114 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.example.crudtest.CRUDTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.example.crudtest.CRUDSqliteTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">springTestContextBeforeTestClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">springTestContextPrepareTestInstance</span>
-                <span class="method-start">9 ms</span>
+                <span class="method-start">13 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">springTestContextBeforeTestMethod(public void com.example.crudtest.CRUDTest.insertOperation())</span>
-                <span class="method-start">9002 ms</span>
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.example.crudtest.CRUDSqliteTest.insertAuthorTest())</span>
+                <span class="method-start">12272 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">insertOperation</span>
-                <span class="method-start">9003 ms</span>
+                <span class="method-name">insertAuthorTest</span>
+                <span class="method-start">12273 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">springTestContextAfterTestMethod(public void com.example.crudtest.CRUDTest.insertOperation())</span>
-                <span class="method-start">9513 ms</span>
+                <span class="method-name">springTestContextAfterTestMethod(public void com.example.crudtest.CRUDSqliteTest.insertAuthorTest())</span>
+                <span class="method-start">12492 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.example.crudtest.CRUDSqliteTest.findOneAuthor())</span>
+                <span class="method-start">12498 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findOneAuthor</span>
+                <span class="method-start">12499 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.example.crudtest.CRUDSqliteTest.findOneAuthor())</span>
+                <span class="method-start">12574 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.example.crudtest.CRUDSqliteTest.insertBookTest())</span>
+                <span class="method-start">12576 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">insertBookTest</span>
+                <span class="method-start">12577 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.example.crudtest.CRUDSqliteTest.insertBookTest())</span>
+                <span class="method-start">12705 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.example.crudtest.CRUDSqliteTest.findOneBook())</span>
+                <span class="method-start">12706 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findOneBook</span>
+                <span class="method-start">12707 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.example.crudtest.CRUDSqliteTest.findOneBook())</span>
+                <span class="method-start">12721 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.example.crudtest.CRUDSqliteTest.updateAuthorTest())</span>
+                <span class="method-start">12722 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateAuthorTest</span>
+                <span class="method-start">12723 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.example.crudtest.CRUDSqliteTest.updateAuthorTest())</span>
+                <span class="method-start">12838 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.example.crudtest.CRUDSqliteTest.updateBookTest())</span>
+                <span class="method-start">12842 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateBookTest</span>
+                <span class="method-start">12842 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.example.crudtest.CRUDSqliteTest.updateBookTest())</span>
+                <span class="method-start">12950 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">deleteBookTest</span>
+                <span class="method-start">12951 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.example.crudtest.CRUDSqliteTest.deleteBookTest())</span>
+                <span class="method-start">12951 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.example.crudtest.CRUDSqliteTest.deleteBookTest())</span>
+                <span class="method-start">13040 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.example.crudtest.CRUDSqliteTest.deleteAuthorTest())</span>
+                <span class="method-start">13042 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteAuthorTest</span>
+                <span class="method-start">13043 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.example.crudtest.CRUDSqliteTest.deleteAuthorTest())</span>
+                <span class="method-start">13128 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">springTestContextAfterTestClass</span>
-                <span class="method-start">9514 ms</span>
+                <span class="method-start">13129 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

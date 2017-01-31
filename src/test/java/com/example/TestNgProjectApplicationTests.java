@@ -3,22 +3,14 @@ package com.example;
  * @author sharmila
  */
 
-import javax.transaction.Transactional;
-
-import org.testng.Assert;
-import org.testng.annotations.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.springframework.web.client.RestTemplate;
 
-import com.example.api.BookDao;
 
-import static org.assertj.core.api.Assertions.assertThat;
 
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
@@ -32,9 +24,6 @@ associated with a test is dirty and should therefore be closed and removed from 
 @SuppressWarnings("deprecation")
 public class TestNgProjectApplicationTests extends AbstractTestNGSpringContextTests{
 
-	@Autowired
-	private BookDao test1;
-	
 	@Autowired
 	private RestTemplate restTemplate;
 	

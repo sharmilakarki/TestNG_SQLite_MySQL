@@ -29,25 +29,29 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">9.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">8</td><td class="numi">8</td><td class="numi">0</td><td class="numi">0</td><td class="numi">13.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">com.example.crudtest.CRUDTest<td><a href="#m1"><b>insertOperation</b>  </a></td><td class="numi">1</td><td>1485442011063</td><td class="numi">506</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="8">com.example.crudtest.CRUDSqliteTest<td><a href="#m1"><b>insertAuthorTest</b>  </a></td><td class="numi">1</td><td>1485849004392</td><td class="numi">212</td></tr><tr class="passedodd"><td><a href="#m2"><b>findOneAuthor</b>  </a></td><td class="numi">1</td><td>1485849004618</td><td class="numi">73</td></tr><tr class="passedodd"><td><a href="#m3"><b>insertBookTest</b>  </a></td><td class="numi">1</td><td>1485849004696</td><td class="numi">127</td></tr><tr class="passedodd"><td><a href="#m4"><b>findOneBook</b>  </a></td><td class="numi">1</td><td>1485849004826</td><td class="numi">10</td></tr><tr class="passedodd"><td><a href="#m5"><b>updateAuthorTest</b>  </a></td><td class="numi">1</td><td>1485849004842</td><td class="numi">114</td></tr><tr class="passedodd"><td><a href="#m6"><b>updateBookTest</b>  </a></td><td class="numi">1</td><td>1485849004961</td><td class="numi">106</td></tr><tr class="passedodd"><td><a href="#m7"><b>deleteBookTest</b>  </a></td><td class="numi">1</td><td>1485849005070</td><td class="numi">88</td></tr><tr class="passedodd"><td><a href="#m8"><b>deleteAuthorTest</b>  </a></td><td class="numi">1</td><td>1485849005162</td><td class="numi">84</td></tr>
 </table>
 <h1>Default test</h1>
-<a id="m1"></a><h2>com.example.crudtest.CRUDTest:insertOperation</h2>
-<div style="padding-left:3em">
-<p>expected:&lt;spring tutorials&gt; but was:&lt;journal dev 2&gt;</p>
-org.testng.Assert.fail(Assert.java:89)
-<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
-<br/>at org.testng.Assert.assertEquals(Assert.java:118)
-<br/>at org.testng.Assert.assertEquals(Assert.java:171)
-<br/>at org.testng.Assert.assertEquals(Assert.java:181)
-<br/>at com.example.crudtest.CRUDTest.insertOperation(CRUDTest.java:42)
-<br/>32 lines not shown
-</div>
+<a id="m1"></a><h2>com.example.crudtest.CRUDSqliteTest:insertBookTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>com.example.crudtest.CRUDSqliteTest:insertAuthorTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>com.example.crudtest.CRUDSqliteTest:deleteAuthorTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>com.example.crudtest.CRUDSqliteTest:updateAuthorTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>com.example.crudtest.CRUDSqliteTest:findOneAuthor</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>com.example.crudtest.CRUDSqliteTest:deleteBookTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>com.example.crudtest.CRUDSqliteTest:findOneBook</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>com.example.crudtest.CRUDSqliteTest:updateBookTest</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

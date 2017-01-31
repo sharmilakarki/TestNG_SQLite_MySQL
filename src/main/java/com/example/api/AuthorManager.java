@@ -1,16 +1,16 @@
 package com.example.api;
 /**
- * @author sanjay
+ * 
+ * @author Sanjay
+ * 
  */
-
-import org.springframework.data.repository.CrudRepository;
 
 import com.example.entity.Author;
 
-
 //extending CrudRepository by custom Repository so all the method's can be overridden for CRUD operations .
-public interface AuthorRepositoryCustom extends CrudRepository<Author, Integer>{
+public interface AuthorManager extends CrudManager<Author, Integer>{
 	//custom method 
-	Author findById(Integer authorId);
+	Author findByName(String name);	
+	void deleteByAuthorName(String name);
 
 }

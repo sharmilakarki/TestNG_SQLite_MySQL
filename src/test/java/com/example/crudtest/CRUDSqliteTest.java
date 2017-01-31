@@ -25,9 +25,9 @@ associated with a test is dirty and should therefore be closed and removed from 
 */
 @DirtiesContext
 @Transactional
-//use application-mysql.properties in order to use mysql for the database
-@TestPropertySource(locations="classpath:application-mysql.properties")
-public class CRUDTest  extends AbstractTestNGSpringContextTests{
+//use application-sqlite.properties in order to use sqlite for the database
+@TestPropertySource(locations="classpath:application-sqlite.properties")
+public class CRUDSqliteTest  extends AbstractTestNGSpringContextTests{
 	
 	@Autowired
 	BookManagerImpl bookService;

@@ -3,16 +3,22 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="com.example.crudtest.CRUDTest">
+      <class name="com.example.crudtest.CRUDSqliteTest">
         <methods>
+          <include name="updateBookTest"/>
           <include name="springTestContextBeforeTestClass"/>
+          <include name="insertBookTest"/>
+          <include name="insertAuthorTest"/>
+          <include name="findOneBook"/>
           <include name="springTestContextPrepareTestInstance"/>
           <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextBeforeTestMethod"/>
+          <include name="deleteBookTest"/>
+          <include name="deleteAuthorTest"/>
+          <include name="findOneAuthor"/>
+          <include name="updateAuthorTest"/>
           <include name="springTestContextAfterTestMethod"/>
-          <include name="insertOperation"/>
         </methods>
-      </class> <!-- com.example.crudtest.CRUDTest -->
+      </class> <!-- com.example.crudtest.CRUDSqliteTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -3,6 +3,8 @@ package com.example.controller;
 /**
  * @author sharmila
  */
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,8 +14,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.example.entity.Author;
 import com.example.entity.Book;
-import com.example.service.AuthorService;
-import com.example.service.BookService;
+import com.example.service.AuthorManagerImpl;
+import com.example.service.BookManagerImpl;
 
 
 @Controller
@@ -21,19 +23,19 @@ import com.example.service.BookService;
 public class DefaultController {
 
 	@Autowired
-	BookService bookService;
+	BookManagerImpl bookService;
 	
 	@Autowired
-	AuthorService authorService;
+	AuthorManagerImpl authorService;
 
 	@RequestMapping(method=RequestMethod.POST)
 	public String insertBook(){
 		Author author = insertAuthor();
-		authorService.save(author);
+		authorService.addNew(author);
 		Book book=insert(1, author);
-		bookService.save(book);
+		bookService.addNew(book);
 		Book book2 = insert(2, author);
-		bookService.save(book2);
+		bookService.addNew(book2);
 		return "home";
 	}
 //	@RequestMapping(method=RequestMethod.POST)
@@ -63,7 +65,7 @@ public class DefaultController {
 	//delete a row from tbl_book by passing id
 	@RequestMapping(value="/{id}/delete",method=RequestMethod.POST)
 	public void delete(Integer id){
-		bookService.delete(1);
+		bookService.removeBy(1);
 	}
 	
 	@RequestMapping("/index")
@@ -73,12 +75,11 @@ public class DefaultController {
 	
 	//get all data from tbl_book
 	@RequestMapping(method=RequestMethod.GET)
-	@SuppressWarnings("unchecked")
 	public ModelAndView getAll(Model model){
 		System.out.println("get all method called");
 	
-		//Iterating througth all data from tbl_book 
-		Iterable<Book> result=bookService.getAll();
+		//Iterating through all data from tbl_book 
+		Iterable<Book> result=bookService.findAll();
 	
 		System.out.println(result);
 		for(Book r:result){

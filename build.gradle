@@ -56,6 +56,15 @@ compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.6'
 compile group: 'org.testng', name: 'testng', version: '6.5.2'
 	
 }
+
+test{
+	useTestNG()
+}
+test{
+	filter{
+		includeTestsMatching "com.example.crudtest.*"
+	}
+}
 jar {
   manifest {
     attributes(
